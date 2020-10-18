@@ -337,7 +337,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
   
 　　sudo rm yy.zip
   
-  　建立小车脱离地面时的语音提醒，自行录制：
+　　建立小车脱离地面时的语音提醒，自行录制：
 
 　　touch if001.mp3
   
