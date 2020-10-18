@@ -65,7 +65,7 @@
 
 　　＊2P电源连接头(副)。用于连接蓄电池和主供电电路板。20或22AWG的电线。
 
-　　＊6mm法兰盘联轴器　x 4。用于连接电机和车轮。
+　　＊6mm法兰盘联轴器 x 4。用于连接电机和车轮。
 
 　　＊５*7cm电路板 x 2。
 
@@ -315,7 +315,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 
 　　＊安装本软件：
 
-　　　cd /home/pi/Documents
+　　cd /home/pi/Documents
  
 　　Pi3下载简版：
 
@@ -333,12 +333,14 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 
 　　wget -O yy.zip https://github.com/flyingboy98/Ekho_Mandarin_Only/raw/main/yy.zip
 
-　　unzip yy
-.zip
+　　unzip yy.zip
+  
 　　sudo rm yy.zip
-　　建立小车脱离地面时的语音提醒，自行录制：
+  
+  　建立小车脱离地面时的语音提醒，自行录制：
 
 　　touch if001.mp3
+  
 　　cd ~
 
 
