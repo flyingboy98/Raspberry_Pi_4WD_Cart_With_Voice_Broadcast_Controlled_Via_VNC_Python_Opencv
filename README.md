@@ -1,6 +1,6 @@
 ﻿　　用树莓派作主板的四轮驱动小车，通过VNC来控制，有语音播放功能。Python编程。
 
-
+完整图文说明：https://blog.csdn.net/flyingboy_98/article/details/109157841
 
 主要特点：
 
@@ -192,7 +192,7 @@
 
 　　　wget -O opencv.zip https://github.com/opencv/opencv/archive/4.４.0.zip
 
-　　　wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.3.0.zip
+　　　wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.4.0.zip
 
 
 
@@ -202,9 +202,9 @@
 
 
 
-　　　mv opencv-4.3.0 opencv
+　　　mv opencv-4.4.0 opencv
 
-　　　mv opencv_contrib-4.3.0 opencv_contrib
+　　　mv opencv_contrib-4.4.0 opencv_contrib
 
 
 
@@ -347,7 +347,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 
 调试：Pi直接连接外设进行调试。主要是调整四个电机的运转方向，使其协调一致。
 
-　　　例如想改变电机1运转方向，在py文件中将：
+　　　例如转向的时候电机1运转方向相反，在py文件中将：
 
 　　　GPIO_MOTOR1_IN1 = 16
 
@@ -359,6 +359,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 
 　　　GPIO_MOTOR1_IN2 = 16
 
+　　　另外要调整红外测距模块到合适的距离，根据硬件说明操作。
 
 
 车体组装：重点在于四个电机支架的位置，也就是四轮定位！首先，四个支架之
@@ -370,7 +371,6 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 　　　    底盘用M3钻头开孔，用M3*50的螺丝固定。
 
 　　　    车厢用M2钻头开孔，用M2*8的螺丝和L型连接片固定。
-
 
 
 使用：Pi上开启real-vnc-server，上位机用real-vnc-viewer接入Pi。如果只
