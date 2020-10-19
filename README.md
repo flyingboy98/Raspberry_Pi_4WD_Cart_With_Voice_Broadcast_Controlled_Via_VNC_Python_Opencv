@@ -1,4 +1,4 @@
-﻿　　用树莓派作主板的四轮驱动小车，通过VNC来控制，有语音播放功能。Python编程。
+﻿用树莓派作主板的四轮驱动小车，通过VNC来控制，有语音播放功能。Python编程。
 
 完整图文说明：https://blog.csdn.net/flyingboy_98/article/details/109157841
 
